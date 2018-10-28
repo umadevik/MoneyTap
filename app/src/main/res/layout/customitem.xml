@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/colorWhite"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="5dp">
+
+         <ImageView
+             android:id="@+id/scientist_image"
+             android:layout_width="100dp"
+             android:layout_height="80dp"
+             android:contentDescription="@string/image_logo"
+             android:padding="0.75dp"
+             android:adjustViewBounds="true"
+         android:scaleType="fitCenter"/>
+
+         <TextView
+             android:id="@+id/scientistName_txt"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin"
+             android:layout_marginLeft="@dimen/left_right_top_bottom_margin_standard"
+             android:layout_marginRight="@dimen/left_right_top_bottom_margin_standard"
+             android:layout_toEndOf="@+id/scientist_image"
+             android:layout_toRightOf="@+id/scientist_image"
+             android:text="@string/title"
+             android:maxLines="2"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="@color/colorBlack"
+             android:textSize="@dimen/standard_heading_textsize"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/description_txt"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_toEndOf="@+id/scientist_image"
+             android:layout_toRightOf="@+id/scientist_image"
+             android:layout_below="@+id/scientistName_txt"
+             android:layout_marginTop="@dimen/margin"
+             android:maxLines="1"
+             android:layout_marginLeft="@dimen/left_right_top_bottom_margin_standard"
+             android:layout_marginRight="@dimen/left_right_top_bottom_margin_standard"
+             android:text="@string/description"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textColor="@color/colorBlack"
+             android:textSize="@dimen/standard_textsize"
+             android:textStyle="normal" />
+
+
+     </RelativeLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/imageview_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/scientist_image"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_logo"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scientistName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/title"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/standard_heading_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/description"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/standard_textsize"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+-->
+</android.support.v7.widget.CardView>

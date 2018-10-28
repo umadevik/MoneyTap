@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/scientist_image"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/left_right_top_bottom_margin_standard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription="@string/image_logo"
+        android:padding="0.75dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/scientistName_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/left_right_top_bottom_margin_standard"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/standard_textsize"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scientist_image" />
+
+    <TextView
+        android:id="@+id/desc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/description_label"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/standard_heading_textsize"
+        android:maxLines="2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scientistName_txt" />
+
+    <TextView
+        android:id="@+id/description_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/left_right_top_bottom_margin_standard"
+        android:layout_marginLeft="@dimen/left_right_top_bottom_margin_standard"
+        android:layout_marginRight="@dimen/left_right_top_bottom_margin_standard"
+        android:text="@string/description"
+        android:maxLines="2"
+        app:layout_constraintStart_toEndOf="@+id/desc_txt"
+        app:layout_constraintTop_toBottomOf="@+id/desc_txt"
+        android:textStyle="normal"
+        android:textSize="@dimen/standard_small_textsize"
+        android:textColor="@color/colorBlack"/>
+
+</android.support.constraint.ConstraintLayout>
